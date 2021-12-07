@@ -35,7 +35,7 @@ func (this *MinStack) PushStack(x int) {
 	 	this.MinLength ++
 	 }
 	 if this.StackMin != nil{
-	 if this.StackMin[this.MinLength-1]>x{
+	 if this.StackMin[this.MinLength-1]>=x{
 	 	this.StackMin = append(this.StackMin,x)
 	 	this.MinLength ++
 	 }

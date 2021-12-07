@@ -7,7 +7,7 @@ type CQueue struct {
  stack2 *list.List
 }
 //初始化链表
-func Constructor() CQueue{
+func Constructor2() CQueue{
 	return CQueue{
 		stack1: list.New(),
 		stack2: list.New(),
@@ -37,7 +37,7 @@ func (this *CQueue) DeleteCQueue() int{
 
 
 func main(){
-	q:=Constructor()
+	q:=Constructor2()
     q.AppendCQueue(5)
 
 }
