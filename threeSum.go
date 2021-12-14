@@ -19,13 +19,14 @@ func threeSum(nums []int) [][]int{
 		if i>0 && n1==nums[i-1]{
 			// [-2,2,2,2] 这种情况，第三个数只会比-2,2大，所以这次循环肯定不成功
 			continue
-		}
+	}
 		l,r :=i+1,len(nums)-1
 		for l<r {
 			n2,n3 :=nums[l],nums[r]
 			if n1+n2+n3 == 0 {
 				res =append(res,[]int{n1,n2,n3})
 				//举例：[-2,-1,1=l,1=r,2,3]
+				//这里应该是整个我最难理解的地方
 				for l<r && nums[l]==n2{
 					l++
 				}
